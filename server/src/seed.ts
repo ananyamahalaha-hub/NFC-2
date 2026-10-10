@@ -173,7 +173,7 @@ if (isDirectRun) {
       await seedDatabase();
     })
     .then(async () => {
-      await disco8bnnectDb();
+      await disconnectDb();
       process.exit(0);
     })
     .catch(async (e) => {
@@ -183,4 +183,3 @@ if (isDirectRun) {
       process.exit(1);
     });
 }
-
